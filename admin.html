@@ -1,0 +1,45 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | WebCraft Studio</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+
+        <div class="admin-brand">
+            <h1>WebCraft<span>Studio</span></h1>
+            <p>Administration Portal</p>
+        </div>
+
+        <div class="login-card" id="loginCard">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to manage your enquiries.</p>
+
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"
+                       placeholder="Enter admin username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter admin password" required>
+
+                <button type="submit" id="loginBtn">Sign In</button>
+
+                <p id="loginMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <a href="index.html" class="back-link">← Back to Website</a>
+        </div>
+
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
+```

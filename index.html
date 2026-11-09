@@ -115,14 +115,117 @@
     </section>
 
     <!-- Contact -->
-    <section class="section contact" id="contact">
-        <p class="tagline">LET'S WORK TOGETHER</p>
-        <h2>Have a Project in <span>Mind?</span></h2>
-        <p>Let's create something amazing for your business.</p>
-        <a href="mailto:your-email@example.com" class="primary-btn">
-            Contact Us ↗
-        </a>
-    </section>
+   
+<section class="section contact" id="contact">
+
+    <p class="tagline">LET'S WORK TOGETHER</p>
+
+    <h2>Have a Project in <span>Mind?</span></h2>
+
+    <p>Tell us about your project. Let's build something amazing together.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Let's discuss your project.</h3>
+
+            <p>
+                Have an idea for your business website?
+                Share your requirements and our team will get in touch.
+            </p>
+
+            <div class="contact-detail">
+                <strong>Our Services</strong>
+                <p>Website Design</p>
+                <p>Web Development</p>
+                <p>Website Maintenance</p>
+            </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    maxlength="80"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    maxlength="254"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    maxlength="20"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service *</label>
+
+                <select id="service" name="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Website Maintenance">Website Maintenance</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    maxlength="2000"
+                    placeholder="Tell us about your project..."
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Hidden anti-spam field -->
+            <div class="honeypot" aria-hidden="true">
+                <label for="website">Leave this field empty</label>
+                <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                >
+            </div>
+
+            <button type="submit" id="submitBtn" class="primary-btn">
+                Send Enquiry ↗
+            </button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
 
     <!-- Footer -->
     <footer>
